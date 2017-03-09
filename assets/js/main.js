@@ -11,7 +11,6 @@
 (function($) {
 	"use strict";
 
-
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',
@@ -31,6 +30,10 @@
       return false;
     }
   }
+  });
+
+  $("nav#menu div.inner ul.links li a").click(function() {
+    $("body").removeClass("is-menu-visible");
   });
 
 

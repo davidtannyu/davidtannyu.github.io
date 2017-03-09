@@ -4,9 +4,13 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
 
+
+
+
+(function($) {
 	"use strict";
+
 
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
@@ -15,6 +19,20 @@
 		small:	'(max-width: 736px)',
 		xsmall:	'(max-width: 480px)'
 	});
+
+  $('a[href*="#"]:not([href="#menu"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+  });
+
 
 	$(function() {
 

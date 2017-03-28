@@ -3705,3 +3705,7 @@
 		}
 
 	}
+
+div.top.inner {
+	display: flex;
+}

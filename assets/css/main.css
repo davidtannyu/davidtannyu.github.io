@@ -2661,7 +2661,7 @@
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin: 0 0 2em 0;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 		.features article {
@@ -2669,7 +2669,7 @@
 			background-color: #353849;
 			border-radius: 5px;
 			margin: 1.5em 0 1.5em 0;
-			width: calc(33% - 1.5em);
+			width: calc(34% - 1.5em);
 		}
 
 			.features article:nth-child(2n) {
@@ -2689,7 +2689,6 @@
 				.features article .image img {
 					border-radius: 5px 5px 0 0;
 					width: 100%;
-					height: 300px;
 				}
 
 		@media screen and (max-width: 980px) {

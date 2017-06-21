@@ -3042,8 +3042,10 @@
 	}
 
 		#banner .inner {
+			/*
 			margin: 0 auto;
 			width: 55em;
+			*/
 		}
 
 		#banner .logo {
@@ -3056,7 +3058,7 @@
 			-ms-transform: translateY(0);
 			transform: translateY(0);
 			opacity: 1;
-			margin: 0 3em 0 0;
+			margin: 0 3em;
 		}
 
 			#banner .logo .icon {
